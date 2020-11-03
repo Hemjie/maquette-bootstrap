@@ -1,0 +1,175 @@
+body {
+    font-family: 'montserrat', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+#navbarNav .nav-link:hover {
+    color: #7a9eff;
+}
+
+#navbarNav .nav-link {
+    color: #fff;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px; 
+    font-size: 14px;
+}
+
+.bg-portfolio {
+    background-color: #7a9eff;
+    color: #fff;
+    padding: 6rem 0;
+}
+
+.bg-portfolio img {
+    margin-bottom: 50px;
+}
+
+.bg-portfolio h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.separator .line {
+    height: 4px;
+    background-color: #fff;
+    width: 150px;
+    border-radius: 10px;
+
+}
+
+/* .separator .line:first-child {
+    margin-right: 20px;
+}
+
+.separator .line:last-child {
+    margin-left: 20px;
+}
+*/
+
+.bg-portfolio p {
+    font-size: 1.5rem;
+}
+
+.rounded-xl {
+    border-radius: 15px;
+}
+
+.bg-project {
+    padding: 6rem 0;
+}
+
+.bg-project .filter {
+    background-color: rgba(26, 188, 156, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+}
+
+.bg-project .filter:hover {
+    opacity: 1;
+}
+
+.bg-project h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bg-about {
+    text-align: justify;
+    background-color: #7a9eff;
+    padding: 6rem;
+    color: #fff
+}
+
+.bg-about h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bg-contact {
+    padding: 6rem 0;
+}
+
+.bg-contact h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-form .form-control {
+    padding: 2rem 0;
+    border: 0;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 1.5rem;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+}
+
+.button-send {
+    padding: 1rem 0;
+}
+.contact-form .form-group textarea {
+    padding: 0.5rem 0;
+}
+
+footer {
+    padding: 6rem 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+footer a.btn-outline-light {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 36px;
+    padding: 6px;
+    margin: 0 5px;
+    border-width: 2px;
+    /*autre façon
+    display: inline-flex;
+    justify-contet: center;
+    align-items: center;
+    */
+    
+}
+
+footer i {
+    width: 25px;
+    height: 20px;
+    /* l'élément sera pivoté en 0.5 secondes */
+    transition: 0.5s;
+}
+
+footer a:hover i {
+    transform: rotate(360deg);
+}
+
+.bg-copyright {
+    background-color: #141719;
+    color: #fff;
+}

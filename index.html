@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-4 pb-4 text-uppercase">
+        <div class="container">
+            <a class="navbar-brand" href="#">Marjolaine Vilain</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Mes projets </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mes compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- /.container -->
+    </nav>
+
+    <div class="bg-portfolio">
+        <div class="container text-center">
+            <img width="240" src="avataaars.png" alt="Marjolaine Vilain">
+            <h1>Marjolaine Vilain</h1>
+            <div class="my-4 separator d-flex justify-content-center align-items-center">
+                <div class="line"></div>
+                <i class="fas fa-laptop-code fa-3x mx-4"></i>
+                <div class="line"></div>
+            </div>
+            <p>Développeur Full-Stack</p>
+        </div> <!-- container -->
+    </div> <!-- bg portofolio -->
+
+    <div class="bg-project">
+        <div class="container">
+            <h2 class="text-dark">Mes projets</h2>
+            <div class="mt-4 mb-5 separator d-flex justify-content-center align-items-center">
+                <div class="line bg-dark"></div>
+                <i class="fas fa-laptop-code fa-3x mx-4"></i>
+                <div class="line bg-dark"></div>
+            </div>
+
+            <!-- Bootstrap fonctionne sur une grille de 12 -->
+            <!-- On peut donc avoir une row avec 4 colonnes de 3 -->
+        
+                <!-- On aura 6 lettres en bureau (lg)
+                        On aura 4 lettres en tablette (md)
+                        2 lettres en mobile 
+                <div class="row">
+                    <div class="col-6 col-md-3 col-lg-2">A</div>
+                    <div class="col-3">B</div>
+                    <div class="col-3">C</div>
+                    <div class="col-3">D</div>
+                    On passe à la ligne
+                    <div class="col-12">E</div>
+                    <div class="col">F</div>
+                </div>
+                -->
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="position-relative">
+                        <a href="#" data-toggle="modal" data-target="#project-1">
+                        <div class="filter rounded-xl">
+                            <i class="fas fa-plus fa-4x"></i>
+                        </div>
+                        </a>
+                        <img class="img-fluid rounded-xl" src="cabin.png" alt="cabane en bois">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="position-relative">
+                        <a href="#" data-toggle="modal" data-target="#project-2">
+                        <div class="filter rounded-xl">
+                            <i class="fas fa-plus fa-4x"></i>
+                        </div>
+                        </a>
+                        <img class="img-fluid rounded-xl" src="cake.png" alt="gâteau">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="position-relative">
+                        <a href="#" data-toggle="modal" data-target="#project-3">
+                        <div class="filter rounded-xl">
+                            <i class="fas fa-plus fa-4x"></i>
+                        </div>
+                        </a>
+                        <img class="img-fluid rounded-xl" src="circus.png" alt="châpiteau de cirque">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="position-relative">
+                        <a href="#" data-toggle="modal" data-target="#project-4">
+                        <div class="filter rounded-xl">
+                            <i class="fas fa-plus fa-4x"></i>
+                        </div>
+                        </a>
+                        <img class="img-fluid rounded-xl" src="game.png" alt="manette de jeu">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="position-relative">
+                        <a href="#" data-toggle="modal" data-target="#project-5">
+                        <div class="filter rounded-xl">
+                            <i class="fas fa-plus fa-4x"></i>
+                        </div>
+                        </a>
+                        <img class="img-fluid rounded-xl" src="safe.png" alt="coffre-fort">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="position-relative">
+                        <a href="#" data-toggle="modal" data-target="#project-6">
+                        <div class="filter rounded-xl">
+                            <i class="fas fa-plus fa-4x"></i>
+                        </div>
+                        </a>
+                        <img class="img-fluid rounded-xl" src="submarine.png" alt="sous-marin">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal fade" id="project-1">
+                <div class="modal-dialog">                    
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Intégration numéro 1</h5>
+                            <button class="close" data-dismiss="modal">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, reiciendis! Tenetur commodi totam omnis asperiores, natus eos quaerat aperiam itaque voluptatibus corrupti, excepturi perspiciatis expedita, aliquid veritatis! Ipsam, consequuntur dolorem!
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            <a href="../06-maquette/index.html" target="_blank" class="btn btn-primary"> Voir la maquette</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="project-2">
+                <div class="modal-dialog">                    
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Intégration numéro 2</h5>
+                            <button class="close" data-dismiss="modal">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid rounded-xl" src="cabin.png" alt="Cabane en bois" >
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            <a href="../06-maquette/index.html" target="_blank" class="btn btn-primary"> Voir la maquette</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="project-3">
+                <div class="modal-dialog modal-xl">                    
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Intégration numéro 3</h5>
+                            <button class="close" data-dismiss="modal">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid rounded-xl" src="maquette.png" alt="maquette du blog">
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            <a href="../06-maquette/index.html" target="_blank" class="btn btn-primary"> Voir la maquette</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="project-4">
+                <div class="modal-dialog">                    
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Intégration numéro 4</h5>
+                            <button class="close" data-dismiss="modal">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Voir le modèle qui a inspiré cette maquette
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            <a href="https://startbootstrap.github.io/startbootstrap-freelancer/" target="_blank" class="btn btn-primary"> Voir la maquette</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="project-5">
+                <div class="modal-dialog">                    
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Intégration numéro 5</h5>
+                            <button class="close" data-dismiss="modal">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, reiciendis! Tenetur commodi totam omnis asperiores, natus eos quaerat aperiam itaque voluptatibus corrupti, excepturi perspiciatis expedita, aliquid veritatis! Ipsam, consequuntur dolorem!
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            <a href="../06-maquette/index.html" target="_blank" class="btn btn-primary"> Voir la maquette</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="project-6">
+                <div class="modal-dialog">                    
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Intégration numéro 6</h5>
+                            <button class="close" data-dismiss="modal">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, reiciendis! Tenetur commodi totam omnis asperiores, natus eos quaerat aperiam itaque voluptatibus corrupti, excepturi perspiciatis expedita, aliquid veritatis! Ipsam, consequuntur dolorem!
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            <a href="../06-maquette/index.html" target="_blank" class="btn btn-primary"> Voir la maquette</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-about">
+        <div class="container">
+            <h2 class="text-light">About</h2>
+            <div class="mt-4 mb-5 separator d-flex justify-content-center align-items-center">
+                <div class="line bg-light"></div>
+                <i class="fas fa-laptop-code fa-3x mx-4"></i>
+                <div class="line bg-light"></div>
+            </div>
+            <div class="row mx-5">
+                <div class="col-lg-4 offset-lg-2">
+                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, magnam modi et adipisci at odit voluptatum alias eveniet quis quae provident vitae. Officiis, fugiat in sequi expedita odio corporis asperiores.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, magnam modi et adipisci at odit voluptatum alias eveniet quis quae provident vitae. Officiis, fugiat in sequi expedita odio corporis asperiores.</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn btn-lg btn-outline-light">
+                    <i class="fas fa-download"></i>
+                    Voir mon CV
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-contact">
+        <div class="container">
+            <h2 class="text-dark">Me contacter</h2>
+
+            <div class="mt-4 mb-5 separator d-flex justify-content-center align-items-center">
+                <div class="line bg-dark"></div>
+                <i class="fas fa-laptop-code fa-3x mx-4"></i>
+                <div class="line bg-dark"></div>
+            </div>
+        </div>
+    
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <form action="" class="contact-form">
+                    <div class="form-group">            
+                        <label for="name" class="d-none">Nom:</label>
+                        <input type="text" name="name" id="name" placeholder="Nom" class="form-control">
+                    </div>
+                    <div class="form-group"> 
+                        <label for="mail" class="d-none">Adresse e-mail</label>
+                        <input type="email" name="mail" id="mail" placeholder="Adresse e-mail" class="form-control">
+                    </div>
+                    <div class="form-group"> 
+                        <label for="phone" class="d-none">Numéro de téléphone</label>
+                        <input type="number" name="phone" id="phone" placeholder="Téléphone" class="form-control">
+                    </div>
+                    <div class="form-group"> 
+                        <label for="message" class="d-none">Message</label>
+                        <textarea name="message" id="message" cols=30 rows=5 placeholder="Message" class="form-control"></textarea>
+                    </div>
+                    <div class="text-center button-send">
+                        <button class="btn btn-primary btn-lg">Envoyer</button>
+                    </div>  
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3>Adresse</h3>
+                    <p class="lead">
+                        11 rue Victor Hugo <br/>
+                        62660 BEUVRY
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3>Réseaux sociaux</h3>
+                    <a class="btn btn-lg btn-outline-light" href="#" target='_blank'>
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-lg btn-outline-light" href="#" target='_blank'>
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-lg btn-outline-light" href="#" target='_blank'>
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn btn-lg btn-outline-light" href="#" target='_blank'>
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h3>A propos</h3>
+                    <p class="lead">
+                        Je suis un développeur <br/> 
+                        Full-Stack.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-copyright text-center py-4">
+        <div class="container">
+            <p class="m-0">
+                <small>Copyright &copy;
+                <i class="far fa-copyright"></i> Marjolaine Vilain 2020</small>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
